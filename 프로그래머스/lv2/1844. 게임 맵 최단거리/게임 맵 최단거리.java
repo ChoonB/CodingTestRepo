@@ -17,8 +17,6 @@ class Solution {
             
             if (tmpX == n-1 && tmpY == m-1) {
                 return tmpDepth+1;
-            } else{
-                visited[tmpX][tmpY] = true;
             }
             
             for(int i=0; i<4; i++){
