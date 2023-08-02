@@ -18,6 +18,8 @@ class Solution {
             int numZ = (int) 'Z' - (int) ch[i] + 1;
             answer += Math.min(numA, numZ);
         }
+        
+        
         answer += m;
         
         return answer;
