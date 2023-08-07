@@ -11,9 +11,7 @@ class Solution {
         int rootY = find(y);
         
         if(rootX == rootY) return;
-        for(int i=0;i<root.length;i++){
-            if(root[i] == rootY) root[i] = rootX;
-        }
+        root[rootY] = rootX;
         
         answer += cost;
         count++;
