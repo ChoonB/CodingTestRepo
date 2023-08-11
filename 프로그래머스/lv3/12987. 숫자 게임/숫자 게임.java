@@ -5,17 +5,16 @@ class Solution {
         Arrays.sort(A);
         Arrays.sort(B);
         int l = B.length;
+        int a = 0;
         int b = 0;
         
-        for(int i=0; i<l; i++){
-            for(int j=b; j<l; j++){
-                if(B[j]>A[i]){
-                    answer++;
-                    b++;
-                    break;
-                } else{
-                    b++;
-                }
+        while(a<l && b<l){
+            if(B[b] > A[a]){
+                answer++;
+                a++;
+                b++;
+            } else{
+                b++;
             }
         }
         
