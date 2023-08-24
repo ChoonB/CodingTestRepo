@@ -2,9 +2,9 @@ import java.util.*;
 class Solution {
     public long solution(int n, int[] times) {
         long answer = 0;
-        Arrays.sort(times);
-        long start = times[0];
-        long end = times[times.length-1] * (long) n;
+        long start = 1;
+        int max = Arrays.stream(times).max().getAsInt();
+        long end = (long) max * n;
         
         long mid, sum;
         
